@@ -1,0 +1,87 @@
+1) Boolean algebra: True, false
+    AND: ^
+    OR: v
+    NOT: ¬
+    Truth table:
+    A   B   A^B AvB
+    0   0   0   0
+    0   1   0   1
+    1   0   0   1
+    1   1   1   1
+    
+    "The sun is shining" ~ P
+    "I've had lunch" ~ Q
+    
+    P^Q = "The sun is shining and I've had lunch."
+    
+    P^(Qv¬R):
+    P   Q   R   ¬R  Qv¬R    P^(Qv¬R)
+    0   0   0   1   1       0
+    0   0   1   0   0       0
+    0   1   0   1   1       0
+    0   1   1   0   1       0
+    1   0   0   1   1       1
+    1   0   1   0   0       0
+    1   1   0   1   1       1
+    1   1   1   0   1       1
+    
+    Order of operations:
+        AND > OR
+    
+    Commutativity:
+        P^Q = Q^P
+        PvQ = QvP
+        
+        Distributivity:
+        P^(QvR) = (P^Q)v(P^R)
+        Pv(Q^R) = (PvQ)^(PvR)
+    
+    Associativity:
+        (P^Q)^R = P^(Q^R)
+        (PvQ)vR = Pv(QvR)
+    
+    Implication: -> ("if")
+    Equivalence: <-> ("if and only if")
+    
+    P = "You are a student"
+    Q = "You're paying for your coffee"
+    
+    A   B   A->B    A<->B
+    0   0   1 (!)   1
+    0   1   1 (!)   0
+    1   0   0       0
+    1   1   1       1
+    
+    P->Q is equivalent to ¬PvQ
+    P<->Q is equivalent to (P^Q)v(¬P^¬Q)
+    
+    "Complete set of operations"
+    
+    Neutral element:
+    1v(anything) = 1
+    0^(anything) = 0
+    0vP = P
+    1^Q = Q
+    Just as
+    1*(anything) = anything
+    0+(anything) = anything
+    
+    Idempotency:
+    P^P = P
+    QvQ = Q
+    Absorption:
+    P^(PvQ) = P
+    Pv(P^Q) = P
+    
+    P^(Qv¬R) = P^(R->Q)
+    Commutativity: P^(Qv¬R) = P^(¬RvQ)
+    Definition: P^(¬RvQ)= P^(R->Q)
+    
+    NAND
+    XOR: (+)
+    
+    P   Q   PvQ     P(+)Q
+    0   0   0       0
+    0   1   1       1
+    1   0   1       1
+    1   1   1       0
