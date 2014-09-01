@@ -1,0 +1,89 @@
+Bok: P'
+
+Kompendium: ¬P
+            _
+Mengdelære: P
+
+Logikk: NOT P
+
+Absorption:
+    P^(PvQ) = P
+    Pv(P^Q) = P
+
+P^(PvQ) = (P^P)v(P^Q) = Pv(P^Q)
+
+Tautologi = Noe som alltid er sant
+
+P   ¬P  Pv¬P
+0   1   1
+1   0   1
+
+Kontradiksjon = Noe som aldri er sant
+
+P   ¬P  P^¬P
+0   1   0
+1   0   0
+
+Oppfyllbar = Noe som er sant for minst en mulig input
+
+P   Q   P^Q
+0   0   0
+0   1   0
+1   0   0
+1   1   1
+
+DeMorgans lov
+Sammenheng mellom AND og OR.
+
+¬(P^Q) = ¬Pv¬Q
+
+P   Q   ¬(P^Q)  ¬Pv¬Q
+0   0   1       1
+0   1   1       1
+1   0   1       1
+1   1   0       0
+
+¬(PvQ) = ¬P^¬Q
+
+Altså: Trenger bare en av AND og OR.
+
+Er uttrykket:
+B^¬((C^A)->B)
+A   B   C   C^A     (C^A)->B::D     ¬D      B^¬D
+0   0   0   0       1               0       0
+0   0   1   0       1               0       0
+0   1   0   0       1               0       0
+0   1   1   0       1               0       0
+1   0   0   0       1               0       0
+1   0   1   1       0               1       0
+1   1   0   0       1               0       0
+1   1   1   1       1               0       0
+Altså: Kontradiksjon
+
+Sannhetstabell som funksjon:
+P   Q   f
+0   0   0
+0   1   1   Minterm
+1   0   0
+1   1   1   Minterm
+Tenker f som en funksjon av P og Q
+Minterm: En rad i sannhetstabellen hvor et uttrykk har verdien 1.
+Et uttrykk kan skrives som funksjoner av minterm
+
+DNF
+Disjunktiv normal form
+er en disjunksjon av mintermer
+Eller: mintermer sammensatt med OR.
+
+Alle boolske uttrykk kan skrives i DNF. Da trenger vi bare AND, OR og NOT.
+
+NAND: Not AND
+                        NOT     AND                     OR
+P   Q   P^Q     PnQ     PnP     (PnQ)n(PnQ)     QnQ     (PnP)n(QnQ) = ¬Pn¬Q
+0   0   0       1       1       0               1       0
+0   1   0       1       1       0               0       1
+1   0   0       1       0       0               1       1
+1   1   1       0       0       1               0       1
+PvQ = ¬(¬P^¬Q)
+
+Vi har vist at alle boolske funksjoner kan kodes ved hjelp av kun NAND.

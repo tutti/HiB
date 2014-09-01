@@ -32,7 +32,7 @@
         P^Q = Q^P
         PvQ = QvP
         
-        Distributivity:
+    Distributivity:
         P^(QvR) = (P^Q)v(P^R)
         Pv(Q^R) = (PvQ)^(PvR)
     
@@ -47,8 +47,8 @@
     Q = "You're paying for your coffee"
     
     A   B   A->B    A<->B
-    0   0   1 (!)   1
-    0   1   1 (!)   0
+    0   0   1       1
+    0   1   1       0
     1   0   0       0
     1   1   1       1
     
