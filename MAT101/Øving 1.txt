@@ -1,0 +1,112 @@
+Øving 1
+
+Q1 a)
+    (P ∨ Q) ∧ (¬P ∨ ¬Q)
+
+P   Q   P∨Q     (¬P∨¬Q)     (P∨Q)∧(¬P∨¬Q)
+0   0   0       1           0
+0   1   1       1           1
+1   0   1       1           1
+1   1   1       0           0
+
+Q1 b)
+    (P → Q) ∧ ¬Q
+
+P   Q   P→Q     (P→Q)∧¬Q
+0   0   1       1
+0   1   1       0
+1   0   0       0
+1   1   1       0
+
+Q2 a)
+    (P → (P ∧ ¬P)) and ¬P
+
+1. (P∧¬P) Contradiction
+2. P→0 ≡ ¬Pv0 ≡ ¬P
+
+Q2 b)
+    (P ∧ (Q ∨ R)) and ((P ∧ Q) ∨ (P ∧ R))
+
+There's no "showing" that these are equivalent; this is literally the definition of distributivity.
+
+Q2 c)
+    (P → (Q → R)) and ((P ∧ Q) → R)
+P   Q   R   Q→R     P∧Q     P→(Q→R)     (P∧Q)→R
+0   0   0   1       0       1           1
+0   0   1   1       0       1           1
+0   1   0   0       0       1           1
+0   1   1   1       0       1           1
+1   0   0   1       0       1           1
+1   0   1   1       0       1           1
+1   1   0   0       1       0           0
+1   1   1   1       1       1           1
+
+Q3 a)
+    (P ∨ Q) → ¬P
+    Satisfiable. If P is true then this is false, if both P and Q are false then this is true.
+
+Q3 b)
+    P ∨ (Q → ¬P)
+    Tautology. If P is true then the left side of the ∨ is true; if it is false then the right side is true.
+
+Q3 c)
+    (P ∧ Q) → ¬P
+    Satisfiable. If P and Q are true then the expression is false (true→false),
+        but if either is false then P∧Q is false, making the expression true.
+
+Q3 d)
+    ((P → Q) ∧ ¬Q) → ¬P
+    Tautology. If P is false then the expression has the form P→1, which is always true.
+        (P→Q)∧¬Q) is always false if P is true: if Q is true then ¬Q is false, and if Q is false then P→Q is false.
+
+Q3 e)
+    (¬(P ∨ Q)) ∧ P
+    Contradiction. Leaving aside the fact that this exercise was bound to have one:
+        ¬(P ∨ Q) ≡ ¬P ∧ ¬Q
+        ¬P ∧ ¬Q ∧ P ≡ (¬P ∧ P) ∧ ¬Q
+        And since ¬P∧P is a contradiction, so is the entire statement.
+        
+Q4 a)
+    (P ∨ Q) ∧ (¬P ∨ ¬Q)
+    Distribution:
+    (P ∨ Q) ∧ (¬P ∨ ¬Q) ≡ (P ∧ ¬P) ∨ (P ∧ ¬Q) ∨ (Q ∧ ¬P) ∨ (Q ∧ ¬Q)
+    Contradiction:
+    (P ∧ ¬P) ∨ (P ∧ ¬Q) ∨ (Q ∧ ¬P) ∨ (Q ∧ ¬Q) ≡ (P ∧ ¬Q) ∨ (Q ∧ ¬P)
+    
+    Answer:
+    (P ∧ ¬Q) ∨ (Q ∧ ¬P)
+    
+
+Q4 b)
+    (P → Q) ∧ ¬Q
+    Definition of implication:
+    (P → Q) ∧ ¬Q ≡ (¬P ∨ Q) ∧ ¬Q
+    Distributivity:
+    (¬P ∨ Q) ∧ ¬Q ≡ (¬Q ∧ ¬P) ∨ (¬Q ∧ Q)
+    Contradiction:
+    (¬Q ∧ ¬P) ∨ (¬Q ∧ Q) ≡ (¬Q ∧ ¬P) ∨ 0 ≡ ¬Q ∧ ¬P
+    
+    Answer:
+    ¬Q ∧ ¬P
+
+Q5
+I'll use + to mean XOR, as the proper sign does not play well with fixed-width fonts.
+P   Q   P+Q     ¬P      P→(P+P)     P∧Q     (P→(P+Q))→(Q+Q)     P∨Q     (P+Q)+((P→(P+Q))→(Q+Q))
+0   0   0       1       1           0       0                   0       0
+0   1   1       1       1           0       0                   1       1
+1   0   1       0       0           0       0                   1       1
+1   1   0       0       0           1       1                   1       1
+
+Showing my work:
+P∧Q ≡ (P→(P+Q))→(Q+Q)
+    First, I found that P∧Q ≡ ¬(P→(P+Q)).
+    But I can't use ¬, so I needed a way to transform it into →.
+    To do this, I exploited the facts that ¬A∨B ≡ A→B, and that C+C is a contradiction.
+    Since C+C is a contradiction, A ≡ A∨(C+C).
+    Using ¬A∨B, in this case, A is ¬(P→(P+Q)), and B is (Q+Q).
+    Thus:
+    ¬(P→(P+Q))≡ ¬(P→(P+Q))∨(Q+Q)
+    ¬(P→(P+Q))∨(Q+Q) ≡ (P→(P+Q))→(Q+Q)
+P∨Q ≡ (P+Q)+((P→(P+Q))→(Q+Q))
+    P∨Q ≡ (P+Q)+(P∧Q) (this I could see from the truth table).
+    From there, I substituted P∧Q with the definition above.
