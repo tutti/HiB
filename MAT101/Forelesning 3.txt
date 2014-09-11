@@ -1,0 +1,2 @@
+DeMorgans lov igjen:
+¬(P^Q) = ¬Pv¬Q = P NAND Q
