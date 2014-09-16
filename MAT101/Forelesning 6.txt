@@ -1,0 +1,65 @@
+Mengdelære: Sett = "samling"
+
+Relasjon: En sammenheng mellom ting/personerm eks. i familie med
+    Hvordan to eller flere elementer er knyttet til hverandre
+
+Kartesisk produkt: Alle mulige tupler mellom to elementer fra to sett
+AxB er { (a,b) | a i A og b i B }
+
+Binær relasjon R mellom A og B er definert ved R c AxB
+R er noen kombinasjoner (a, b).
+
+Grafisk fremstilling
+
+A       B
+a1 -+-> b1
+a2 / -> b2
+a3 -/ > b3
+a4 --/
+
+Kalles bigraf/digraf
+
+|AxB| = |A| * |B|
+|R| <= |A| * |B|
+
+Relasjoner kan også skrives som uttrykk (vanlig setning) eller beskrivelse ("predikat").
+R = { x i N: x=3n for n i N }
+R er { alle naturlige tall delelig på 3 }
+R = { 3, 6, 9, ... }
+
+Matriseform
+\B
+A\  b1  b2  b3
+a1  1   0   0
+a2  1   0   0
+a3  0   1   0
+a4  0   0   1
+
+Egenskaper til relasjoner
+- Refleksiv: x~Rx for alle x    Eks. person i slekt med, for tall: mindre enn eller lik
+    - Irrefleksiv: x~Rx for ingen x     Eks. for tall: mindre enn
+- Symmetrisk: For alle x~Ry, y~Rx (kun for AxA)     Eks: i slekt (igjen), for tall: likhet
+- Antisymmetrisk: Hvis x~Ry og y~Rx så er x=y       Eks: mindre enn eller lik (igjen)
+- Transitivitet: Hvis x~Ry og y~Rz, så er x~Rz      Eks: etterkommere/arvinger (biologisk)
+
+Ekvivalensrelasjon:
+Abstraksjon av likhet
+En relasjon som er refleksiv, symmetrisk, antisymmetrisk og transitiv kalles en ekvivalensrelasjon
+
+Partiell ordning:
+Abstraksjon av mindre enn eller lik
+En relasjon som er refleksiv, antisymmetrisk og transitiv kalles en partiell ordning
+En partiell ordning er total hvis for alle par (x, y) x~Ry eller y~Rx
+
+Tillukning (closure):
+                                                       _
+Tillukninga til en relasjon med hensyn på en egenskap: R (her !R)
+!R er den minste relasjon slik at Rc!R og !R har egenskapen p
+
+R gitt ved { (a,b), (a,c), (c,d), (d,c) }
+
+Refleksiv tillukning til R:
+R u { (a,a), (b,b), (c,c), (d,d) }
+
+Transitiv tillukning til R:
+R u { (a,d) }

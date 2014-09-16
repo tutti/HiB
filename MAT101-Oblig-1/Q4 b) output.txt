@@ -1,0 +1,258 @@
+{
+{}
+{(x, T)}
+{(y, T)}
+{(x, T), (y, T)}
+{(z, T)}
+{(x, T), (z, T)}
+{(y, T), (z, T)}
+{(x, T), (y, T), (z, T)}
+{(d, T)}
+{(x, T), (d, T)}
+{(y, T), (d, T)}
+{(x, T), (y, T), (d, T)}
+{(z, T), (d, T)}
+{(x, T), (z, T), (d, T)}
+{(y, T), (z, T), (d, T)}
+{(x, T), (y, T), (z, T), (d, T)}
+{(x, F)}
+{(x, T), (x, F)}
+{(y, T), (x, F)}
+{(x, T), (y, T), (x, F)}
+{(z, T), (x, F)}
+{(x, T), (z, T), (x, F)}
+{(y, T), (z, T), (x, F)}
+{(x, T), (y, T), (z, T), (x, F)}
+{(d, T), (x, F)}
+{(x, T), (d, T), (x, F)}
+{(y, T), (d, T), (x, F)}
+{(x, T), (y, T), (d, T), (x, F)}
+{(z, T), (d, T), (x, F)}
+{(x, T), (z, T), (d, T), (x, F)}
+{(y, T), (z, T), (d, T), (x, F)}
+{(x, T), (y, T), (z, T), (d, T), (x, F)}
+{(y, F)}
+{(x, T), (y, F)}
+{(y, T), (y, F)}
+{(x, T), (y, T), (y, F)}
+{(z, T), (y, F)}
+{(x, T), (z, T), (y, F)}
+{(y, T), (z, T), (y, F)}
+{(x, T), (y, T), (z, T), (y, F)}
+{(d, T), (y, F)}
+{(x, T), (d, T), (y, F)}
+{(y, T), (d, T), (y, F)}
+{(x, T), (y, T), (d, T), (y, F)}
+{(z, T), (d, T), (y, F)}
+{(x, T), (z, T), (d, T), (y, F)}
+{(y, T), (z, T), (d, T), (y, F)}
+{(x, T), (y, T), (z, T), (d, T), (y, F)}
+{(x, F), (y, F)}
+{(x, T), (x, F), (y, F)}
+{(y, T), (x, F), (y, F)}
+{(x, T), (y, T), (x, F), (y, F)}
+{(z, T), (x, F), (y, F)}
+{(x, T), (z, T), (x, F), (y, F)}
+{(y, T), (z, T), (x, F), (y, F)}
+{(x, T), (y, T), (z, T), (x, F), (y, F)}
+{(d, T), (x, F), (y, F)}
+{(x, T), (d, T), (x, F), (y, F)}
+{(y, T), (d, T), (x, F), (y, F)}
+{(x, T), (y, T), (d, T), (x, F), (y, F)}
+{(z, T), (d, T), (x, F), (y, F)}
+{(x, T), (z, T), (d, T), (x, F), (y, F)}
+{(y, T), (z, T), (d, T), (x, F), (y, F)}
+{(x, T), (y, T), (z, T), (d, T), (x, F), (y, F)}
+{(z, F)}
+{(x, T), (z, F)}
+{(y, T), (z, F)}
+{(x, T), (y, T), (z, F)}
+{(z, T), (z, F)}
+{(x, T), (z, T), (z, F)}
+{(y, T), (z, T), (z, F)}
+{(x, T), (y, T), (z, T), (z, F)}
+{(d, T), (z, F)}
+{(x, T), (d, T), (z, F)}
+{(y, T), (d, T), (z, F)}
+{(x, T), (y, T), (d, T), (z, F)}
+{(z, T), (d, T), (z, F)}
+{(x, T), (z, T), (d, T), (z, F)}
+{(y, T), (z, T), (d, T), (z, F)}
+{(x, T), (y, T), (z, T), (d, T), (z, F)}
+{(x, F), (z, F)}
+{(x, T), (x, F), (z, F)}
+{(y, T), (x, F), (z, F)}
+{(x, T), (y, T), (x, F), (z, F)}
+{(z, T), (x, F), (z, F)}
+{(x, T), (z, T), (x, F), (z, F)}
+{(y, T), (z, T), (x, F), (z, F)}
+{(x, T), (y, T), (z, T), (x, F), (z, F)}
+{(d, T), (x, F), (z, F)}
+{(x, T), (d, T), (x, F), (z, F)}
+{(y, T), (d, T), (x, F), (z, F)}
+{(x, T), (y, T), (d, T), (x, F), (z, F)}
+{(z, T), (d, T), (x, F), (z, F)}
+{(x, T), (z, T), (d, T), (x, F), (z, F)}
+{(y, T), (z, T), (d, T), (x, F), (z, F)}
+{(x, T), (y, T), (z, T), (d, T), (x, F), (z, F)}
+{(y, F), (z, F)}
+{(x, T), (y, F), (z, F)}
+{(y, T), (y, F), (z, F)}
+{(x, T), (y, T), (y, F), (z, F)}
+{(z, T), (y, F), (z, F)}
+{(x, T), (z, T), (y, F), (z, F)}
+{(y, T), (z, T), (y, F), (z, F)}
+{(x, T), (y, T), (z, T), (y, F), (z, F)}
+{(d, T), (y, F), (z, F)}
+{(x, T), (d, T), (y, F), (z, F)}
+{(y, T), (d, T), (y, F), (z, F)}
+{(x, T), (y, T), (d, T), (y, F), (z, F)}
+{(z, T), (d, T), (y, F), (z, F)}
+{(x, T), (z, T), (d, T), (y, F), (z, F)}
+{(y, T), (z, T), (d, T), (y, F), (z, F)}
+{(x, T), (y, T), (z, T), (d, T), (y, F), (z, F)}
+{(x, F), (y, F), (z, F)}
+{(x, T), (x, F), (y, F), (z, F)}
+{(y, T), (x, F), (y, F), (z, F)}
+{(x, T), (y, T), (x, F), (y, F), (z, F)}
+{(z, T), (x, F), (y, F), (z, F)}
+{(x, T), (z, T), (x, F), (y, F), (z, F)}
+{(y, T), (z, T), (x, F), (y, F), (z, F)}
+{(x, T), (y, T), (z, T), (x, F), (y, F), (z, F)}
+{(d, T), (x, F), (y, F), (z, F)}
+{(x, T), (d, T), (x, F), (y, F), (z, F)}
+{(y, T), (d, T), (x, F), (y, F), (z, F)}
+{(x, T), (y, T), (d, T), (x, F), (y, F), (z, F)}
+{(z, T), (d, T), (x, F), (y, F), (z, F)}
+{(x, T), (z, T), (d, T), (x, F), (y, F), (z, F)}
+{(y, T), (z, T), (d, T), (x, F), (y, F), (z, F)}
+{(x, T), (y, T), (z, T), (d, T), (x, F), (y, F), (z, F)}
+{(d, F)}
+{(x, T), (d, F)}
+{(y, T), (d, F)}
+{(x, T), (y, T), (d, F)}
+{(z, T), (d, F)}
+{(x, T), (z, T), (d, F)}
+{(y, T), (z, T), (d, F)}
+{(x, T), (y, T), (z, T), (d, F)}
+{(d, T), (d, F)}
+{(x, T), (d, T), (d, F)}
+{(y, T), (d, T), (d, F)}
+{(x, T), (y, T), (d, T), (d, F)}
+{(z, T), (d, T), (d, F)}
+{(x, T), (z, T), (d, T), (d, F)}
+{(y, T), (z, T), (d, T), (d, F)}
+{(x, T), (y, T), (z, T), (d, T), (d, F)}
+{(x, F), (d, F)}
+{(x, T), (x, F), (d, F)}
+{(y, T), (x, F), (d, F)}
+{(x, T), (y, T), (x, F), (d, F)}
+{(z, T), (x, F), (d, F)}
+{(x, T), (z, T), (x, F), (d, F)}
+{(y, T), (z, T), (x, F), (d, F)}
+{(x, T), (y, T), (z, T), (x, F), (d, F)}
+{(d, T), (x, F), (d, F)}
+{(x, T), (d, T), (x, F), (d, F)}
+{(y, T), (d, T), (x, F), (d, F)}
+{(x, T), (y, T), (d, T), (x, F), (d, F)}
+{(z, T), (d, T), (x, F), (d, F)}
+{(x, T), (z, T), (d, T), (x, F), (d, F)}
+{(y, T), (z, T), (d, T), (x, F), (d, F)}
+{(x, T), (y, T), (z, T), (d, T), (x, F), (d, F)}
+{(y, F), (d, F)}
+{(x, T), (y, F), (d, F)}
+{(y, T), (y, F), (d, F)}
+{(x, T), (y, T), (y, F), (d, F)}
+{(z, T), (y, F), (d, F)}
+{(x, T), (z, T), (y, F), (d, F)}
+{(y, T), (z, T), (y, F), (d, F)}
+{(x, T), (y, T), (z, T), (y, F), (d, F)}
+{(d, T), (y, F), (d, F)}
+{(x, T), (d, T), (y, F), (d, F)}
+{(y, T), (d, T), (y, F), (d, F)}
+{(x, T), (y, T), (d, T), (y, F), (d, F)}
+{(z, T), (d, T), (y, F), (d, F)}
+{(x, T), (z, T), (d, T), (y, F), (d, F)}
+{(y, T), (z, T), (d, T), (y, F), (d, F)}
+{(x, T), (y, T), (z, T), (d, T), (y, F), (d, F)}
+{(x, F), (y, F), (d, F)}
+{(x, T), (x, F), (y, F), (d, F)}
+{(y, T), (x, F), (y, F), (d, F)}
+{(x, T), (y, T), (x, F), (y, F), (d, F)}
+{(z, T), (x, F), (y, F), (d, F)}
+{(x, T), (z, T), (x, F), (y, F), (d, F)}
+{(y, T), (z, T), (x, F), (y, F), (d, F)}
+{(x, T), (y, T), (z, T), (x, F), (y, F), (d, F)}
+{(d, T), (x, F), (y, F), (d, F)}
+{(x, T), (d, T), (x, F), (y, F), (d, F)}
+{(y, T), (d, T), (x, F), (y, F), (d, F)}
+{(x, T), (y, T), (d, T), (x, F), (y, F), (d, F)}
+{(z, T), (d, T), (x, F), (y, F), (d, F)}
+{(x, T), (z, T), (d, T), (x, F), (y, F), (d, F)}
+{(y, T), (z, T), (d, T), (x, F), (y, F), (d, F)}
+{(x, T), (y, T), (z, T), (d, T), (x, F), (y, F), (d, F)}
+{(z, F), (d, F)}
+{(x, T), (z, F), (d, F)}
+{(y, T), (z, F), (d, F)}
+{(x, T), (y, T), (z, F), (d, F)}
+{(z, T), (z, F), (d, F)}
+{(x, T), (z, T), (z, F), (d, F)}
+{(y, T), (z, T), (z, F), (d, F)}
+{(x, T), (y, T), (z, T), (z, F), (d, F)}
+{(d, T), (z, F), (d, F)}
+{(x, T), (d, T), (z, F), (d, F)}
+{(y, T), (d, T), (z, F), (d, F)}
+{(x, T), (y, T), (d, T), (z, F), (d, F)}
+{(z, T), (d, T), (z, F), (d, F)}
+{(x, T), (z, T), (d, T), (z, F), (d, F)}
+{(y, T), (z, T), (d, T), (z, F), (d, F)}
+{(x, T), (y, T), (z, T), (d, T), (z, F), (d, F)}
+{(x, F), (z, F), (d, F)}
+{(x, T), (x, F), (z, F), (d, F)}
+{(y, T), (x, F), (z, F), (d, F)}
+{(x, T), (y, T), (x, F), (z, F), (d, F)}
+{(z, T), (x, F), (z, F), (d, F)}
+{(x, T), (z, T), (x, F), (z, F), (d, F)}
+{(y, T), (z, T), (x, F), (z, F), (d, F)}
+{(x, T), (y, T), (z, T), (x, F), (z, F), (d, F)}
+{(d, T), (x, F), (z, F), (d, F)}
+{(x, T), (d, T), (x, F), (z, F), (d, F)}
+{(y, T), (d, T), (x, F), (z, F), (d, F)}
+{(x, T), (y, T), (d, T), (x, F), (z, F), (d, F)}
+{(z, T), (d, T), (x, F), (z, F), (d, F)}
+{(x, T), (z, T), (d, T), (x, F), (z, F), (d, F)}
+{(y, T), (z, T), (d, T), (x, F), (z, F), (d, F)}
+{(x, T), (y, T), (z, T), (d, T), (x, F), (z, F), (d, F)}
+{(y, F), (z, F), (d, F)}
+{(x, T), (y, F), (z, F), (d, F)}
+{(y, T), (y, F), (z, F), (d, F)}
+{(x, T), (y, T), (y, F), (z, F), (d, F)}
+{(z, T), (y, F), (z, F), (d, F)}
+{(x, T), (z, T), (y, F), (z, F), (d, F)}
+{(y, T), (z, T), (y, F), (z, F), (d, F)}
+{(x, T), (y, T), (z, T), (y, F), (z, F), (d, F)}
+{(d, T), (y, F), (z, F), (d, F)}
+{(x, T), (d, T), (y, F), (z, F), (d, F)}
+{(y, T), (d, T), (y, F), (z, F), (d, F)}
+{(x, T), (y, T), (d, T), (y, F), (z, F), (d, F)}
+{(z, T), (d, T), (y, F), (z, F), (d, F)}
+{(x, T), (z, T), (d, T), (y, F), (z, F), (d, F)}
+{(y, T), (z, T), (d, T), (y, F), (z, F), (d, F)}
+{(x, T), (y, T), (z, T), (d, T), (y, F), (z, F), (d, F)}
+{(x, F), (y, F), (z, F), (d, F)}
+{(x, T), (x, F), (y, F), (z, F), (d, F)}
+{(y, T), (x, F), (y, F), (z, F), (d, F)}
+{(x, T), (y, T), (x, F), (y, F), (z, F), (d, F)}
+{(z, T), (x, F), (y, F), (z, F), (d, F)}
+{(x, T), (z, T), (x, F), (y, F), (z, F), (d, F)}
+{(y, T), (z, T), (x, F), (y, F), (z, F), (d, F)}
+{(x, T), (y, T), (z, T), (x, F), (y, F), (z, F), (d, F)}
+{(d, T), (x, F), (y, F), (z, F), (d, F)}
+{(x, T), (d, T), (x, F), (y, F), (z, F), (d, F)}
+{(y, T), (d, T), (x, F), (y, F), (z, F), (d, F)}
+{(x, T), (y, T), (d, T), (x, F), (y, F), (z, F), (d, F)}
+{(z, T), (d, T), (x, F), (y, F), (z, F), (d, F)}
+{(x, T), (z, T), (d, T), (x, F), (y, F), (z, F), (d, F)}
+{(y, T), (z, T), (d, T), (x, F), (y, F), (z, F), (d, F)}
+{(x, T), (y, T), (z, T), (d, T), (x, F), (y, F), (z, F), (d, F)}
+}
