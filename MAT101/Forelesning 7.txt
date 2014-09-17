@@ -1,0 +1,69 @@
+Relasjon: Sammenheng mellom mengder
+- Lager tupler ved kartesisk produkt: AxB - alle par (a,b) hvor a i A og b i B
+- Binær relasjon mellom A og B er en delmengde av AxB
+
+Irrefleksiv: Ingen elementer har en relasjon til seg selv.
+Refleksiv: Alle elementer har en relasjon til seg selv.
+Symmetrisk: Hvis relasjonen har (a,b) har den også (b,a).
+Antisymmetrisk: Hvis relasjonen har (a,b) og (b,a) så er a=b.
+Transitiv: Hvis relasjonen har (a,b) og (b,c) har den også (a,c).
+
+Invers relasjon:
+Hvis R er en relasjon fra A til B, R er i AxB, så er R^-1 en relasjon fra B til A.
+R^-1 er definert ved:
+    (b,a) er i R^-1 hviss (a,b) er i R.
+
+Funksjon:
+En binær funksjon f mellom to mengder A og B er en relasjon som oppfyller:
+1) det finnes b i B for alle a i A slik at (a,b) er med i f (definert for alle input)
+2) hvis (a,b) og (a,c) finnes i f, er b=c (unikt resultat for alle input)
+
+Vi skriver f:A->B for å betegne at f er en funksjon fra A til B.
+
+Sammensetning:
+SoR (eller R;S) er definert på AxC ved:
+(a,c) er i SoR hvis det finnes en b i B slik at (a,b) er i R og (b,c) er i S.
+Ser på alle mulige veier fra A til C og tar med start- og endepunkt.
+R { (a1,b1), (a1,b2), (a3,b2), (a4,b2) }
+S { (b1,c2), (b2,c1), (b3,c3) }
+SoR { (a1,c1), (a1,c2), (a3,c1), (a4,c1) }
+
+Sammensetning av funksjoner:
+To funksjoner f og g kan settes sammen når målet til f er starten til g.
+gof = g(f(a))
+
+Sammensetning av logiske matriser for relasjoner
+    1   2   3
+a1  T   T   T
+b1  F   T   F
+
+    x   y
+1   F   T
+2   T   F
+3   T   F
+
+M er en 2*3 matrise
+N er en 3*2 matrise
+Kan multipliseres når Ms bredde er lik Ns høyde
+
+M*N=P blir en 2*2 matrise
+P(1,1) = M(1,1) * N(1,1) + M(1,2) * N(2,1) + M(1,3) * N(3,1)
+* = AND
++ = OR
+P(1,1) = (T^F) v (T^T) v (T^T) = T
+
+Gitt en funksjon f:A->B
+Vi sier at A er domenet eller definisjonsområdet (definisjonsmengden) til f,
+og B er co-domenet eller verdiområdet.
+Bildet til f = { b i B | eksisterer a i A | f(a) = b } (dvs alle b som kan være resultat av f(a)).
+
+Egenskaper til funksjoner
+Injektiv: Alle input gir unikt output - hvis f(x) = f(y) => x = y for alle (x,y)
+Subjektiv ("onto"): Bildet er likt verdiområdet - hvis f:A->B så finnes det a i A slik at f(a) = b for alle b i B
+Bijektiv: Injektiv og subjektiv
+
+En funksjon f:A->B har en invers hviss f er bijektiv
+
+Injektiv: f^-1 har høyst en a for hver b
+Subjektiv: f^-1 har minst en a for hver b
+Bijektiv: f^-1 har nøyaktig en a for hver b
