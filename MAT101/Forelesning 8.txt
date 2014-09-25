@@ -1,0 +1,24 @@
+Injektiv: f(x) = f(y) => x=y        Hver b har en eller færre a, altså ingen b har mer enn en a
+Surjektiv: Hver b har minst en a, altså alle b har minst en a
+
+Pigeonhole principle:
+Let f: f(A->B) (A, B finite sets)
+If |A| > |B|, then at least one value of f occurs more than once.
+    There does not exist an injective function on finite sets where the domain is larger than the codomain.
+More general:
+If |A| > k*|B| k in N, then there is a value of f that occurs at least k+1 times.
+
+Binary numbers:
+With n bits we can represent 2^n different values
+
+1368 <= 2^n
+
+n = log 1368 / log 2
+
+ln = log base e
+
+log base 2 (a) = ln (a) / ln (2)
+
+log (a*b) = log (a) + log (b)
+log (a/b) = log (a) - log (b)
+log (a^b) = b*log (a)

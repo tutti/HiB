@@ -65,5 +65,5 @@ Bijektiv: Injektiv og subjektiv
 En funksjon f:A->B har en invers hviss f er bijektiv
 
 Injektiv: f^-1 har høyst en a for hver b
-Subjektiv: f^-1 har minst en a for hver b
+Surjektiv: f^-1 har minst en a for hver b
 Bijektiv: f^-1 har nøyaktig en a for hver b
