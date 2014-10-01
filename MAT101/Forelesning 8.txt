@@ -1,5 +1,5 @@
 Injektiv: f(x) = f(y) => x=y        Hver b har en eller færre a, altså ingen b har mer enn en a
-Surjektiv: Hver b har minst en a, altså alle b har minst en a
+Surjektiv: Hver b har minst en a, altså ALLE b har minst en a
 
 Pigeonhole principle:
 Let f: f(A->B) (A, B finite sets)

@@ -59,8 +59,8 @@ Bildet til f = { b i B | eksisterer a i A | f(a) = b } (dvs alle b som kan være
 
 Egenskaper til funksjoner
 Injektiv: Alle input gir unikt output - hvis f(x) = f(y) => x = y for alle (x,y)
-Subjektiv ("onto"): Bildet er likt verdiområdet - hvis f:A->B så finnes det a i A slik at f(a) = b for alle b i B
-Bijektiv: Injektiv og subjektiv
+Surjektiv ("onto"): Bildet er likt verdiområdet - hvis f:A->B så finnes det a i A slik at f(a) = b for alle b i B
+Bijektiv: Injektiv og surjektiv
 
 En funksjon f:A->B har en invers hviss f er bijektiv
 
