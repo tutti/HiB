@@ -75,19 +75,19 @@ Theorem: A geometric sequence a[n] = r*k^n (r!=0) converges iff -1 < k <= 1.
     - If -1 < k < 1 it converges towards 0
     - If k = 1 it is constant and hence converges to r
     - If k > 1 then it diverges towards infinity or -infinity (depending on r)
-    - If k <= -1 then it diverges neither to infinity nor -infinity
+    - If k <= -1 then it diverges neither to infinity nor -infinity (alternating signs, always growing)
 
 Series
 Definition:
 The sigma-notation for the sum of a finite sequence a = (a0, a1, ..., a[n]) is
     n
-    Σ   ai = a0 + a1 + ... + a[n]
+    Σ   a[i] = a0 + a1 + ... + a[n]
     i=0
 
 For infinite series, we take the limit, if it exists, of the finite partial sums:
-    inf                   n
-    Σ   ai = lim (n->inf) Σ   ai
-    i=0                   i=0
+    inf                     n
+    Σ   a[i] = lim (n->inf) Σ   a[i]
+    i=0                     i=0
 
 If the limit exists, we say the series converges, otherwise it diverges.
 

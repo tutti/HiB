@@ -1,0 +1,30 @@
+Given an arithmetic series with s, t as real numbers:
+    a[i] = s+t*i (i >= 0)
+Then
+    n
+    Σ   a[i] = ((n+1)*(2s+n*t))/2
+    i=0
+Always diverges, except for trivial case s=t=0.
+
+Given a geometric series with r, k as real numbers:
+    a[i] = r*k^i
+Then if k != 1,
+    n
+    Σ   a[i] = (r-r*k^(n+1))/(1-k)
+    i=0
+If k=1,
+    n
+    Σ   a[i] = (n+1)*r
+    i=0
+
+Theorem: Given a geometric sequence with r,k as real numbers, r != 0,
+    a[i] = r * k^i
+Then the series
+    inf
+    Σ   a[i]
+    i=0
+converges iff |k| < 1, and the sum is r/(1-k).
+
+    inf
+    Σ   1/i!    (factorial, "fakultet")
+    i=0
