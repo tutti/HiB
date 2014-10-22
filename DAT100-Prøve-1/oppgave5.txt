@@ -1,0 +1,46 @@
+public class Student {
+    private String navn;
+    private int studentnummer;
+    private boolean datastudent;
+
+    public Student(String navn, int studentnummer, boolean datastudent) {
+        this.navn = navn;
+        this.studentnummer = studentnummer;
+        this.datastudent = datastudent;
+    }
+
+    public Student() {
+        this("NN", 0, false);
+    }
+
+    public String getNavn() return navn;
+    public void setNavn(navn) this.navn = navn;
+    public int getStudentnummer() return studentnummer;
+    public void setStudentnummer(studentnummer) this.studentnummer = studentnummer;
+    public boolean isDatastudent() return datastudent;
+    public boolean setDatastudent(datastudent) this.datastudent = datastudent;
+
+    public void skrivUt() {
+        System.out.print("Navn: ");
+        System.out.println(navn);
+        System.out.print("Studentnr: ");
+        System.out.println(studentnummer);
+        System.out.print("Datastudent: ");
+        if (datastudent) {
+            System.out.println("ja");
+        } else {
+            System.out.println("nei");
+        }
+    }
+
+    public static void main(String[] args) {
+        Student ole = new Student("Ole Olsen", 12345, false);
+        Student kari = new Student();
+        kari.setNavn("Kari Nilsen");
+        kari.setStudentnummer(12346);
+        kari.setDatastudent(true);
+
+        ole.skrivUt();
+        kari.skrivUt();
+    }
+}

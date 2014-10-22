@@ -1,0 +1,3 @@
+for (int i=5; i>0; --i) {
+    System.out.println("5 * "+i+" = "+i*5);
+}

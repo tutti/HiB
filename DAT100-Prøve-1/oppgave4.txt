@@ -1,0 +1,28 @@
+public static in antallNegative(int[] tab) {
+    int antall = 0;
+    for (int tall : tab) {
+        if (tall < 0) {
+            ++antall;
+        }
+    }
+    return antall;
+}
+
+public static boolean erAlleLike(int[] tab) {
+    if (tab.length == 0) return false;
+    int tall = tab[0];
+    for (int nyTall : tab) {
+        if (tall != nyTall) {
+            return false;
+        }
+    }
+    return true;
+}
+
+public static void skriv(String[] tab) {
+    for (String string : tab) {
+        if (string.length() >= 3 && string.length() <= 5) {
+            System.out.println(string);
+        }
+    }
+}

@@ -1,0 +1,47 @@
+import easyIO.In;
+import easyIO.Out;
+
+public class Ligning {
+    private In in = new In();
+    private Out out = new Out();
+
+    public static void main(String[] args) {
+        int under0 = 0;
+        int lik0 = 0;
+        int over0 = 0;
+
+        out.out("Hvor mange ligninger skal løses? ");
+        for (int i = in.inInt(); i > 0; --i) {
+            out.out("Skriv inn a: ");
+            double a = in.inDouble();
+            while (a == 0) {
+                out.out("0 er ugyldig for a. Skriv inn a: ");
+                double a = in.inDouble();
+            }
+            out.out("Skriv inn b: ");
+            double b = in.inDouble();
+            out.out("Skriv inn c: ");
+            double c = in.inDouble();
+
+            double dellosning = (b*b)-(4*a*c);
+            if (dellosning < 0) {
+                ++under0;
+                System.out.println("Ligningen har ingen reelle løsninger");
+            } else if (dellosning == 0) {
+                ++lik0;
+                double losning = (-b) / (2*a);
+                System.out.println("Ligningen har en dobbelrot: x = "+losning);
+            } else {
+                ++over0;
+                double losning1 = - ((b + Math.sqrt(dellosning)) / (2*a));
+                double losning2 = - ((b - Math.sqrt(dellosning)) / (2*a));
+                System.out.println("Ligningen har røttene: x = "
+                    + losning1 + " og x = " + losning2);
+            }
+        }
+
+        System.out.println(under0 + " ligning(er) hadde ingen reelle løsninger.");
+        System.out.println(lik0 + " ligning(er) hadde dobbelrøtter.");
+        System.out.println(over0 + " ligning(er) hadde to ulike røtter.");
+    }
+}
