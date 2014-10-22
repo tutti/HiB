@@ -1,0 +1,40 @@
+Logikk
+
+Læren om tenking
+Utlede avgjørelser basert på fakta
+
+Utsagn ("proposition")
+evt påstand
+- Et utsagn er en påstand som er enten sann eller usann
+Tilsvarende boolsk algebra
+
+Eksempel:
+- P: Daniel er en jente
+- Q: Diskret matematikk er lett
+
+- P AND Q
+- (NOT P) OR Q      P => Q
+
+Vis at
+NOT (P AND NOT Q)
+er logisk ekvivalent med
+((NOT P) OR Q)
+P   Q   NP&NQ   NP/Q
+1   1   1       1
+1   0   0       0
+0   1   1       1
+0   0   1       1
+
+NOT Q => NOT P
+Er ekvivalent med
+P => Q
+Kontrapositivt argument
+
+Et predikat er en setning som inneholder variabler som er enten sann eller usann avhengig av variablenes verdier
+
+- Det finnes et heltall x slik at x^2 = 2: Usant
+- Det finnes et primtall som er et partall: Sant, 2.
+
+Kvantorer:
+∀ x P(x): For alle x holder P(x)
+/*∀*/∃ x P(x): Det eksisterer minst en x slik at P(x)

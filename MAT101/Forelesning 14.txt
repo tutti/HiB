@@ -1,0 +1,48 @@
+Inductive definition of N:
+/*∀*/1) 0 ∈ N
+/*∀*/2) n ∈ N -> n+1 ∈ N
+
+Inductive def. of prop. formulas PF
+/*∀*/ - B ⊆ PF
+/*∀*/ - τ ⊆ PF
+/*∀*/   ({P,Q,R...} ⊆ τ finite set of prop. variables)
+/*∀*/ - Φ ∈ PF -> ¬Φ ∈ PF
+PF = {0, 1, P, Q, R, ..., Z, ...,
+        ¬0, ¬1, ¬P, ...,
+        ¬¬0, ¬¬1, ¬¬P, ..., [...]
+/*∀*/ - Φ,Ψ ∈ PF -> ΦoΨ ∈ PF
+        [...], 0∧0, 0∧1, ... [...]
+
+Inductive def. of |Φ|:
+/*∀*/ - |b| = 1, b ∈ B
+/*∀*/ - |P| = 1, P ∈ τ
+      - |¬Φ| = |Φ| + 1
+      - |ΦoΨ| = |Φ| + |Ψ| + 1
+
+def sf(Φ), the set of subformulae
+(does not include the formula itself)
+- sf(b) = Ø
+- sf(P) = Ø
+- sf(¬Φ) = {Φ}∪sf(Φ)
+- sf(ΦoΨ) = {Φ,Ψ}∪sf(Φ)∪sf(Ψ)
+
+Define < on NxN->B
+
+- 0 < 0 := false
+- 0 < n+1 := true
+- n < n+1 := true
+
+Show that:
+    Formulae of length n >= 1 have at most n subformulae
+        Ex: P∧¬(Q∨1) ~> {P, Q, 1, Q∨1, ¬(Q∨1)}
+    Proof by induction:
+    sf(Φ) is the set of subformulae for Φ
+    1)  |b| = n -> |sf(b)| <= n     |b| = 1 -> |Ø| = 0 <= 1     by def. of |Φ|
+        |P| = n -> |sf(P)| <= n     |P| = 1 -> |Ø| = 0 <= 1     by def. of |Φ|
+    2)  Assume that |Φ| = n -> |sf(Φ)| <= 1 holds
+        Show:
+        - |¬Ψ| = k -> |sf(¬Ψ)| <= k
+            k = 1 + |Ψ| -> |{Ψ} ∪ sf(Ψ)| <= k       by def. of functions
+            |{Ψ} ∪ sf(Ψ)| = 1 + |sf(Ψ)| <= k        by |M∪N| <= |M| + |N|
+            k = 1 + |Ψ| = |Ψ| = k - 1
+            |Ψ| = k - 1 -> |sf(Ψ)| <= k - 1         by IH

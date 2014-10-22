@@ -1,0 +1,39 @@
+Induction
+
+/*∀*/Q: Does the Fibonacci sequence grow exponentially, that is ∃r∈R: F(n) >= r^(n-2), r>1
+Proof by induction:
+1)  F(1) >= r^(1-2) <=> F(1) >= 1/r since r>1
+    Similarly for F(2)
+2)  n -> n+1
+    To show: F(n+1) >= r^(n-1)
+    F(n+1)   = F(n) + F(n-1)        by definition of F
+    F(n+1)  >= r^(n-2) + r^(n-3)    by induction hypothesis
+            >= r^(n-3) * (1+r)      pick r^2 = r+1
+             = r^(n-3) * r^2
+             = r^(n-1)
+
+Structural induction
+    Propositional formulae are inductively defined over the boolean constants 1 and 0,
+    a set of propositional variables (P, Q, R, ...) and the connectives {¬, ∨, ∧, →}.
+    
+    The length of a formula |Φ| is defined as its number of symbols.
+        Ex: |1∧Q| = 3
+        |Φ| = 1 if Φ is a boolean constant or variable,
+        |¬Φ| = |Φ| + 1,
+        |ΦoΨ| = |Φ| + |Ψ| + 1
+    Furthermore, we define the depth d(Φ) inductively:
+        d(Φ) = 0 if Φ is a constant or propositional variable,
+        d(¬Φ) = d(Φ) + 1,
+        d(ΦoΨ) = 1 + max(d(Φ), d(Ψ))
+
+Show that:
+    Formulae of length n >= 1 have at most n subformulae
+        Ex: P∧¬(Q∨1) ~> {P, Q, 1, Q∨1, ¬(Q∨1)}
+    Proof by induction:
+    sf(Φ) is the set of subformulae for Φ
+    1)  |false| <= 1
+        |true|  <= 1
+        |p|     <= 1
+    2)  Assuming that |Φ| = n and Φ has k subformulae:
+        Show that ¬Φ has at most n+1 subformulae
+        //TODO
