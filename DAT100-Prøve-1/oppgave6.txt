@@ -12,6 +12,7 @@ public class Ligning {
 
         out.out("Hvor mange ligninger skal løses? ");
         for (int i = in.inInt(); i > 0; --i) {
+            out.outln();
             out.out("Skriv inn a: ");
             double a = in.inDouble();
             while (a == 0) {
@@ -29,14 +30,14 @@ public class Ligning {
                 System.out.println("Ligningen har ingen reelle løsninger");
             } else if (dellosning == 0) {
                 ++lik0;
-                double losning = (-b) / (2*a);
+                double losning = -(b / (2*a));
                 System.out.println("Ligningen har en dobbelrot: x = "+losning);
             } else {
                 ++over0;
                 double losning1 = - ((b + Math.sqrt(dellosning)) / (2*a));
                 double losning2 = - ((b - Math.sqrt(dellosning)) / (2*a));
-                System.out.println("Ligningen har røttene: x = "
-                    + losning1 + " og x = " + losning2);
+                System.out.println("Ligningen har røttene: x1 = "
+                    + losning1 + " og x2 = " + losning2);
             }
         }
 
