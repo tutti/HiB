@@ -1,0 +1,25 @@
+public class BrukerKonti {
+    private HashMap<String, String> konti;
+
+    // a)
+    public BrukerKonti() {
+        konti = new HashMap<String, String>();
+    }
+
+    // b)
+    public void registrerBruker(String brukernavn, String passord) {
+        if (konti.get(brukernavn) !== null) {
+            throw new Exception("Brukeren "+brukernavn+" finnes allerede!");
+        }
+        konti.put(brukernavn, passord);
+    }
+
+    // c)
+    public boolean sjekkPassord(brukernavn, passord) {
+        String kontrollPassord = konti.get(brukernavn);
+        if (kontrollPassord === null) {
+            return false;
+        }
+        return kontrollPassord.equals(passord);
+    }
+}

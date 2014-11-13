@@ -1,0 +1,39 @@
+public class Kino {
+    private boolean[][] seter = {{true,true,false,false,false,true,true,false},
+                                 {true,true,true,true,true,true,true,true},
+                                 {true,true,true,true,true,true,true,true}};
+
+    // a)
+    public boolean erLedig(int r, int s) {
+        // Jeg leser her spesifikasjonen "return true hvis plass s[...] er ledig
+        // og false ellers" til å bety at alle tilfeller der plassen ikke er
+        // ledig - inkludert de der plassen ikke finnes - til å skulle returnere
+        // false.
+        if (r<0 || r>seter.length || s<0 || s>seter[r].length) return false;
+        return seter[r][s];
+    }
+
+    // b)
+    public int antallLedige() {
+        int antall = 0;
+        for (boolean[] rekke : seter) {
+            for (boolean sete : rekke) {
+                ++antall;
+            }
+        }
+        return antall;
+    }
+
+    // c)
+    public void finnLedig() {
+        for (int r=0; r<seter.length; ++r) {
+            for (int s=0; s<seter[r].length; ++r) {
+                if (seter[r][s]) {
+                    System.out.print("Sete " + s + " på rekke " + r +
+                        " er ledig.");
+                    return;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+a)
+Modellen inneholder klassene Person, Betalingskort, Bank, Kreditkort, og
+Kontantkort. En Person har et navn (String) samt opp til 10 Betalingskort. Et
+Betalingskort har et nummer (int), en peker til en Person, og en til en Bank.
+En Bank har et navn, og kan ha et uendelig antall Betalingskort.
+
+Kreditkort og Kontantkort er klasser som arver fra Betalingskort. Kreditkort
+har en grense mens Kontantkort har en saldo; begge disse er heltall. Siden
+disse arver fra Betalingskort har de også de samme objektvariable som
+Betalingskort.
+
+b)
+Variabelen kort under Person skal peke på arrayet. Hvert element i arrayet skal
+peke på enten et Kreditkort eller et Kontantkort. På samme måte må variabelen
+betkort i Bank peke på arraylisten, mens elementene i arraylisten må peke på
+enten Kreditkort eller Kontantkort. Variabelen p under både Kreditkort og
+Kontantkort må peke på Person, mens variabelen b under de samme må peke på
+Bank.

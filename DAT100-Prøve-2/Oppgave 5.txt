@@ -1,0 +1,84 @@
+/*
+ * Notis:
+ *     I deloppgave a spesifiseres det at klassen "Rom" skal ha en
+ *     objektvariabel navn (String). I deloppgave d spesifiseres det at klassen
+ *     "Kontor" også skal ha en objektvariabel navn (String). Etter råd fra
+ *     vakthavende lærer har jeg valgt å gi objektvariabelen i Kontor et nytt
+ *     navn: den vil under bli referert til som "personnavn".
+ */
+
+// a)
+public class Rom {
+    private int nummer;
+    private String navn;
+
+    public Rom(String navn, int nummer) {
+        this.navn = navn;
+        this.nummer = nummer;
+    }
+
+    // b)
+    public void skrivUt() {
+        System.out.println("Rom #" + nummer + ": " + navn);
+    }
+}
+
+// c)
+public class Møterom extends Rom {
+    private int antall;
+
+    // d) (1 av 2)
+    public Møterom(String navn, int nummer, int antall) {
+        this.antall = antall;
+        super(navn, nummer);
+    }
+
+    public Møterom(String navn, int nummer) {
+        // Lagt til for å unngå feil med skrivUt().
+        this(navn, nummer, 0);
+    }
+
+    // e) (1 av 2)
+    public void skrivUt() {
+        System.out.println("Rom #" + nummer + ": " + navn + " - plass til " +
+            antall + " personer.");
+    }
+}
+
+public class Kontor extends Rom {
+    private String personnavn; // Avvik fra oppgave; se notis øverst
+
+    // d) (2 av 2)
+    public Kontor(String navn, int nummer, String personnavn) {
+        this.personnavn = personnavn;
+        super(navn, nummer);
+    }
+
+    public Møterom(String navn, int nummer) {
+        // Lagt til for å unngå feil med skrivUt().
+        this(navn, nummer, "Ingen");
+    }
+
+    // e) (2 av 2)
+    public void skrivUt() {
+        System.out.println("Rom #" + nummer + ": " + navn + " - brukes av " + personnavn + ".");
+    }
+}
+
+// f)
+public class RomTest {
+    public static void main(String[] args) {
+        Rom møterom = new Møterom("Møterom 1", 1, 15);
+        Rom kontor = new Kontor("Kontor 46", 46, "Husbert Husnisse");
+        møterom.skrivUt();
+        kontor.skrivUt();
+    }
+}
+
+/*
+ * g)
+ *     Alt som må endres er å skrive "abstract" etter "public".
+ *     Hovedforskjellen mellom en abstrakt klasse og en vanlig klasse er
+ *     at en ikke kan opprette objekter av en abstrakt klasse direkte, en må
+ *     bruke en klasse som arver fra den.
+ */
