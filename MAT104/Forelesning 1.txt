@@ -1,0 +1,40 @@
+Kapittel 1: Regning
+
+1.2. Reelle tall: 1, 4, -487, 1.4, pi, -sqrt(2), ..
+    (NB. Tilnærme med flyttall)
+
+[a,b] = alle tall mellom a og b inkl. a og b
+<a,b> = alle tall mellom a og b men ikke a eller b
+
+Hva med uendelig? Uendelig er ikke et reelt tall, men kan fortsatt brukes som endepunkt
+<-INF, INF> = alle tall
+
+1.3. Regning
++, -, *, /
+
+Potenser
+3^4 = 81 (3*3*3*3)
+3^0 = 1
+3^-2 = 1/(3^2)
+
+Se selv på teorem 1 side 7 (regneregler)
+
+1.4 Potenser som er brøk - røtter
+grunntall^eksponent
+2^(1/2)?
+Kvadratrot
+sqrt(2) er definert slik at sqrt(2)^2 = 2 og sqrt(2) >= 0
+(2^3)^4 = 2^(3*4)
+sqrt(2)^2 = (2^(1/2))^2 = 2^(2*1/2) = 2
+sqrt(2) = 2^(1/2)
+mte rot av a: m-rt(a)
+m-rt(a) = a^(1/m)
+a^(n/m) = m-rt(a^n) = (m-rt(a))^n
+Eks 8^(4/3) = 3-rt(8^4) = 3-rt(4096) = 16
+            = 3-rt(8)^4 = 2^4 = 16
+
+Parenteser: Endre eller presisere rekkefølge
+
+1.9 Ligninger
+Løse en ligning:
+Avgjøre hvilke tall det "stemmer" for
