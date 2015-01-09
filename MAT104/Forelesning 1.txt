@@ -37,4 +37,4 @@ Parenteser: Endre eller presisere rekkefølge
 
 1.9 Ligninger
 Løse en ligning:
-Avgjøre hvilke tall det "stemmer" for
+Avgjøre hvilke tall det "stemmer" for - for hvilke tall stemmer ligningen?

@@ -1,0 +1,89 @@
+Generisk datatype og generisk programmering
+
+public class ArrayList<T> ...
+
+ArrayList<String>
+ArrayList<Integer>
+
+public interface ParForhold<T> {
+    T getFørste();
+    T getAndre();
+    ...
+}
+
+public class Par<T> implements ParForhold<T> ...
+
+Mer enn en generisk type:
+
+public interface ParForhold2<S,T> ...
+
+public interface Comparable<T> {
+    int compareTo(T o);
+}
+
+public interface ParForhold3<T extends Comparable<T>> ...
+
+<T extends Comparable<? super T>>
+
+? super T setter T som nedre grense i arvehierarkiet. F eks <? super Dyr> utelukker Hund
+
+Vekstfunksjon: Tid det tar å gjennomføre en algoritme
+F. eks oppvask: 1 tallerken tar 60 sekunder å vaske
+
+Tid (n tallerkener) = 60n sekunder
+
+For hver algoritme vi skal analysere:
+- Må definere størrelse for problemet
+- Må velge verdien som representerer bruk av tid
+- Må forsøke å optimalisere prosesseringssteget
+
+Formell definisjon:
+t(n) er av orden høyst f(n) hvis det finnes positive konstanter c og N slik at t(n) <= cf(n) for alle n >= N
+I stor O-notasjon: t(n) er O(f(n))
+f(n) kalles vekstfunksjonen
+
+
+
+Vekstfunksjon og stor O-notasjon
+- Neglisjerer lavere ordens ledd
+Eks 5n^4 + 3n^3 + 2n^2 + 3n + 1 er O(n^4).
+
+Regler og skrivemåte:
+O(k) = O(1), der k er en positiv konstant
+O(k(f(n))) = O(f(n))
+O(f(n)) + O(g(n)) = O(f(n) + g(n))
+O(f(n))O(g(n)) = O(f(n)g(n))
+
+Kort om tekstfiler
+Data inn = inndata
+Data ut = utdata
+
+Inndata basert på datastrømmer
+Bytestrømmer håndterer bytes. Skal ikke brukes i dette faget.
+Tegnstrømmer: håndterer sekvenser av tegn - data bestående av 16-bit Unicode
+PrintWriter: Konvertering av primitiver
+BufferedReader, -Writer: bufret lesing og skriving
+
+Binærfil: data blir tolket som bytes
+Tekstfil: data blir tolket som tekst
+
+Filsti: Nøyaktig angivelse av hvor i filsystemet filen ligger
+"\\", "/" eller File.separator
+
+Dataposter:
+- En måte å bruke filer er å lagre data som poster
+- Strukturerer data som poster ("records"), dvs oppstilling av felt
+Eks: "Ole", "Olsen", 215
+
+Linjeslutt-strengen er plattformavhengig: "\r\n" i Windows, "\n" i Unix
+
+Skriving til fil:
+- Definer en FileWriter
+    FileWriter ansFil = new FileWriter("ansatte.txt", false);
+- Definer en PrintWriter
+    PrintWriter utfil = new PrintWriter(ansFil);
+- Skriv ut verdier til filen
+    utfil.print(fornavn);
+    utfil.print(etternavn);
+- Lukk strømmen
+    utfil.close();
